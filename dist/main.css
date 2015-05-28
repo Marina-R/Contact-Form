@@ -1,0 +1,65 @@
+body {
+	background-image: url(images/bg.jpg);
+}
+div.error {
+	height: 20px;
+	border: none;
+	color: red;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+div#main {
+	height: 600px;
+	width: 80%;
+	margin: 50px auto;
+	background-color: white;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+h1 {
+	padding-top: 40px;
+	padding-left: 20px;
+}
+form > *, form > * > * {
+	display: block;
+	font: 18px Arial;	
+} 
+form {
+	margin: 0 20px;
+}
+form >*>* {
+	width: 100%;
+	padding: 10px 0;
+	border: 2px solid rgb(234, 234, 234);
+	border-left: 3px solid black;
+}
+textarea {
+	height: 120px;
+}
+button {
+	background-color: black;
+	color: white;
+	width: 140px;
+	height: 70px;
+	float: left;
+	margin: 0 auto;
+}
+input, textarea {
+   font-size: 14px;
+   padding-left: 10px;
+}
+@media (min-width: 580px) {
+	div {
+		width: 70%;
+		height: 540px;
+		margin: 30px auto;
+	}
+	form >*>* {
+		padding: 3px 0;
+	}
+	input, textarea {
+   		padding-left: 10px;
+	}
+}

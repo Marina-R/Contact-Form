@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<meta charset='utf8'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="main">
+		<h1>Contact Us</h1>
+		<form>
+			<label>
+				Name
+				<input id='name' type="text" placeholder='Sally Smith'>
+				<div class='error' id='nameDiv'></div>
+			</label>
+			<label>
+				Email
+				<input id='email' type="text" placeholder='ssmith@gmail.com'>
+				<div class='error' id='emailDiv'></div>
+			</label>
+			<label>
+				Website
+				<input id='website' type="text" placeholder='http://mssmith.net'>
+				<div class='error' id='webDiv'></div>
+			</label>
+			<label>
+				Message
+				<textarea id='message' placeholder='A friendly message...'></textarea>
+				<div class='error' id='msgDiv'></div>
+			</label>
+			<button>Submit</button>
+		</form>
+		
+	</div>
+	
+
+	<script type="text/javascript" src='scripts/bower_components/jquery/dist/jquery.min.js'></script>
+	<script type="text/javascript" src='scripts/node_modules/validator/validator.min.js'></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
