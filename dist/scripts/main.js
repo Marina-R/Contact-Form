@@ -27,11 +27,15 @@ function start () {
 		}
 		
 		function validate () {
-			var validationResult = true;
-			validationResult = validateElement('#nameDiv', validator.isAlpha, $name, 'Name cannot be left empty');
-			validationResult = validateElement('#emailDiv', validator.isEmail, $email, 'Email must have contain an "@"');
-			validationResult = validateElement('#webDiv', isWebLink, $web, 'Website must start with http://');
-			validationResult = validateElement('#msgDiv', validator.isAlpha, $msg, 'Message cannot be left empty');
+			var validationResult = false;
+			var res1 = validateElement('#nameDiv', validator.isAlpha, $name, 'Name cannot be left empty');
+			var res2 = validateElement('#emailDiv', validator.isEmail, $email, 'Email must have contain an "@"');
+			var res3 = validateElement('#webDiv', isWebLink, $web, 'Website must start with http://');
+			var res4 = validateElement('#msgDiv', validator.isAlpha, $msg, 'Message cannot be left empty');
+			
+			if(res4 && res3 && res2 && res1) {
+				validationResult = true;
+			}
 			
 			return validationResult;
 			
